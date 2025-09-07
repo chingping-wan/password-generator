@@ -1,9 +1,55 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <h1></h1>
-        <script src="index.js"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Password Generator</title>
+
+  <!-- Inter (optional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <main class="app">
+    <div class="stage">
+      <!-- LEFT CARD (blank outputs) -->
+      <section class="card">
+        <header class="card__header">
+          <h1 class="headline">
+            Generate a
+            <span class="headline__accent">random password</span>
+          </h1>
+          <p class="subtitle">Never use an insecure password again.</p>
+        </header>
+
+        <div class="card__actions">
+          <button class="btn" id="generatePassword">
+            Generate passwords
+          </button>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="outputs">
+          <div class="output">
+            <label class="sr-only" for="pass-1">Password 1</label>
+            <input id="pass-1" class="output__field" type="text" placeholder="" readonly />
+            <button id="copy-1" class = "copy-btn" type=""button">Copy</button>
+          </div>
+          <div class="output">
+            <label class="sr-only" for="pass-2">Password 2</label>
+            <input id="pass-2" class="output__field" type="text" placeholder="" readonly />
+            <button id="copy-2" class = "copy-btn" type="button">Copy</button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+ <script src="index.js"></script>
+ 
+</body>
 </html>
